@@ -1,0 +1,45 @@
+/* General styles */
+:root {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+}
+section {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img {
+    width: 50px;
+}
+section:first-of-type {
+    background-color:lightcoral;
+}
+section:nth-of-type(2) {
+    background-color:lightsalmon;
+}
+section:last-of-type {
+    background-color:lightskyblue;
+}
+/* Arrow animations */
+.downArrow, .upArrow {
+    animation: hover 1.2s infinite;
+}
+@keyframes hover {
+    0%, 100% {
+        transform: translateY(50px);
+        opacity: 0.01;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
